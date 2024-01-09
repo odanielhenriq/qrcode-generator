@@ -50,6 +50,12 @@ body {
     font-weight: 500;
 }
 
+.container button a {
+    color: #fff;
+    border: none;
+    text-decoration: none;
+}
+
 #imgBox {
     width: 100%;
     border-radius: 5px;
@@ -73,15 +79,19 @@ body {
     0% {
         transform: translateX(0);
     }
+
     25% {
         transform: translateX(-2px);
     }
+
     50% {
         transform: translateX(0);
     }
+
     75% {
         transform: translateX(2px);
     }
+
     100% {
         transform: translateX(0);
     }
