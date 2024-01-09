@@ -51,9 +51,11 @@ body {
 }
 
 #imgBox {
-    width: 200px;
+    width: 100%;
     border-radius: 5px;
-    max-height: 0;
+    max-height: 100%;
+    margin: 10px auto;
+    border: 1px solid #d1d1d1;
     overflow: hidden;
     transition: max-height 1s;
 }
@@ -61,12 +63,6 @@ body {
 #imgBox img {
     width: 100%;
     padding: 10px;
-}
-
-#imgBox.show-img {
-    max-height: 300px;
-    margin: 10px auto;
-    border: 1px solid #d1d1d1;
 }
 
 .error {
