@@ -12,16 +12,20 @@
 <body>
 
     <div class="container">
-        <p>Insira seu Texto ou URL</p>
-        <input type="text" name="" id="qrText" placeholder="Texto ou URL">
+        <div class="box">
+            <div class="left">
+                <p>Insira seu Texto ou URL</p>
+                <input type="text" name="" id="qrText" placeholder="Texto ou URL">
+            </div>
+            <div class="right">
+                <div id="imgBox">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=example" id="qrImage">
+                </div>
 
-        <div id="imgBox">
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=example" id="qrImage">
+                <a href="#" id="downloadButton"><button>Download QR Code</button></a>
+            </div>
         </div>
-
-        <button><a href="#" id="downloadButton">Download QR Code</a></button>
     </div>
-
 
     <script src='js/index.js'></script>
 </body>
