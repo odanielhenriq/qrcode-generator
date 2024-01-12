@@ -14,16 +14,31 @@ body {
     width: 100vw;
     height: 100vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.container .box{
-    width: 400px;
+.container .box {
+    display: flex;
+    width: 50vw;
+    height: 50vh;
     padding: 25px 35px;
     background: #fff;
     border-radius: 10px;
+    justify-content: space-around;
+}
+
+.left {
+    margin-right: 25px;
+    width: 50vw;
+    height: 50vh;
+}
+
+.right {
+    margin-left: 25px;
+    width: 50vw;
+    height: 50vh;
 }
 
 .container p {
@@ -63,17 +78,17 @@ body {
 }
 
 #imgBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    border-radius: 5px;
-    max-height: 100%;
-    margin: 10px auto;
-    border: 1px solid #d1d1d1;
     overflow: hidden;
     transition: max-height 1s;
 }
 
 #imgBox img {
-    width: 100%;
+    width: 75%;
     padding: 10px;
 }
 
